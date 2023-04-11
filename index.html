@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body class="h-screen max-w-fit container ">
-    <nav class="bg-gray-800 py-6" >
+  <!-- Navigation -->
+    <nav class="bg-gray-800 py-6 " >
         <div class=" w-full mx-auto px-2 sm:px-6 lg:px-8 grid grid-rows-2  md:flex justify-between md:items-center justify-items-center">
           <div class="md:flex md:items-center  ">
             <a href="#" class="text-white font-bold md:text-xl">SKEEN</a>
@@ -36,79 +37,129 @@
         <h1 class=" text-4xl font-semibold mx-auto col-span-5">NEW STOCK ALERT</h1>
         <div class=" mx-auto col-span-5 flex justify-around overflow-hidden max-w-full mt-6">
           <div class=" h-3/4 w-1/6">
-          <img src="./img/newstock/BENTON_Snail_Bee_High_Content_Essence_60ml2_133426f1-b504-4b6b-b264-de8ec8548564_800x.jpg" alt="Bentone snail bee essence">
+          <img class="prod-img" src="./img/newstock/BENTON_Snail_Bee_High_Content_Essence_60ml2_133426f1-b504-4b6b-b264-de8ec8548564_800x.jpg" alt="Bentone snail bee essence">
           <p>$15.99</p> <p>Bentone snail bee essence</p>
-          <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
           </div>
+
           <div class=" h-3/4 w-1/6">
-          <img src="./img/newstock/cerave lotion.jpg" alt="Cerave moisturizing lotion" >
+          <img class="prod-img" src="./img/newstock/cerave lotion.jpg" alt="Cerave moisturizing lotion" >
           <p>$21.31</p> <p>Cerave moisturizing lotion</p>
-          <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
           </div>
+
           <div class=" h-3/4 w-1/6">
-          <img src="./img/newstock/COSRX_-Advanced_Snail_All_In_One_Cream1.jpg" alt="CORSX advanced snail mucin cream">
+          <img class="prod-img" src="./img/newstock/COSRX_-Advanced_Snail_All_In_One_Cream1.jpg" alt="CORSX advanced snail mucin cream">
           <p>$11.90</p> <p>CORSX advanced snail mucin cream</p>
-          <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
           </div>
+
           <div class=" h-3/4 w-1/6">
-          <img src="./img/newstock/paula's choice bha.jpeg" alt="Paula's Choice AHA/BHA">
+          <img class="prod-img" src="./img/newstock/paula's choice bha.jpeg" alt="Paula's Choice AHA/BHA">
           <p>$8.45</p> <p>Paula's Choice AHA/BHA</p>
-          <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
           </div>
+
           <div class=" h-3/4 w-1/6">
-          <img src="./img/newstock/the ordinary serum.jpg" alt="The Ordinary Retinol 0.1%">
+          <img class="prod-img" src="./img/newstock/the ordinary serum.jpg" alt="The Ordinary Retinol 0.1%">
           <p>$10.30</p> <p>The Ordinary Retinol 0.1%</p>
-          <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
           </div>
         </div>
       </div>
 
+      <!-- Bestseller products -->
       <div class="h-fit py-16 bg-blue-100 grid gap-y-8">
         <h1 class=" text-6xl text-gray-300 font-thin mx-auto col-span-4">#YourFavorites</h1>
         <h1 class="text-4xl font-semibold items-center mx-auto col-span-4 "> BESTSELLERS OF THE WEEK</h1>
         <div class=" mx-10  flex justify-around overflow-hidden max-w-4/5 mt-6 col-span-4">   
-            <div class=" h-3/4 w-1/5">
-            <img src="./img/bestsellers/Ceramex uv balm.png" alt="Ceramex SPF 15 UV balm">
+            <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+            <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Ceramex uv balm.png" alt="Ceramex SPF 15 UV balm">
             <p>$4.99</p> <p>Ceramex SPF 15 UV balm</p>
-            <div>Add to Cart</div>
-            </div>
-           <div class=" h-3/4 w-1/5">
-              <img src="./img/bestsellers/Dove pampering body wash.jpg" alt="Dove pampering body wash">
-              <p>$6.73</p> <p>Dove pampering body wash</p>
-              <div>Add to Cart</div>
+            <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+              <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+              <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+            <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
               </div>
-            <div class=" h-3/4 w-1/5">
-                <img src="./img/bestsellers/face facts ceramide cleanser.jpg" alt="Face facts ceramide cleanser">
+
+              <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+                <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Dove pampering body wash.jpg" alt="Dove pampering body wash">
+              <p>$6.73</p> <p>Dove pampering body wash</p>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
+              </div>
+
+              <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+                <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/face facts ceramide cleanser.jpg" alt="Face facts ceramide cleanser">
                 <p>$8.03</p> <p>Face facts ceramide cleanser</p>
-                <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
                 </div>
-            <div class=" h-3/4 w-1/5">
-                  <img src="./img/bestsellers/Kojie san soap.png" alt="Kojie San soap 100g">
+
+                <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+                  <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Kojie san soap.png" alt="Kojie San soap 100g">
                   <p>$4.99</p> <p>Kojie San soap 100g</p>
-                  <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
                   </div>          
           </div>
 
           <div class=" mx-10 flex justify-around overflow-hidden max-w-4/5 mt-6 col-span-4">   
-            <div class=" h-3/4 w-1/5">
-            <img src="./img/bestsellers/Nivea SPF UV sunscreen.jpg" alt="Nivea 50SPF UVA Sunscreen">
+            <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+              <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Nivea SPF UV sunscreen.jpg" alt="Nivea 50SPF UVA Sunscreen">
             <p>$15.41</p> <p>Nivea 50SPF UVA Sunscreen</p>
-            <div>Add to Cart</div>
-            </div>
-           <div class=" h-3/4 w-1/5">
-              <img src="./img/bestsellers/olay body wash.jpg" alt="Olay Vit C body wash">
-              <p>$10.83</p> <p>Olay Vit C body wash</p>
-              <div>Add to Cart</div>
+            <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+              <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+              <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+            <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
               </div>
-            <div class=" h-3/4 w-1/5">
-                <img src="./img/bestsellers/Reihaku UV lotion.jpeg" alt="Reihaku UV lotion">
+
+              <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+                <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/olay body wash.jpg" alt="Olay Vit C body wash">
+              <p>$10.83</p> <p>Olay Vit C body wash</p>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
+              </div>
+
+              <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+                <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Reihaku UV lotion.jpeg" alt="Reihaku UV lotion">
                 <p>$20.99</p> <p>Reihaku UV lotion</p>
-                <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
                 </div>
-            <div class=" h-3/4 w-1/5">
-                  <img src="./img/bestsellers/topicream.png" alt="Bentone snail bee essence">
+
+                <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+                  <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/topicream.png" alt="Bentone snail bee essence">
                   <p>$12.99</p> <p>Topicream</p>
-                  <div>Add to Cart</div>
+          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
+            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
                   </div>          
           </div>
         </div>
@@ -116,28 +167,33 @@
       </div>
 
       <!-- contact and information -->
-      <div class="h-2/5 grid grid-cols-2">
-        <div>
-          <p>   CONTACT <br>
+      <div class="h-fit grid grid-cols-2 mx-60 py-10">
+        <div class="">
+          <div><h3 class="font-semibold text-xl text-pink-800">   CONTACT</h3> <br>
             (+234) 801 – 122 -3344 <br>
             <br>
             info@trueskeenbeauty.com <br>
             <br>
             xyz Crescent, Ikeja GRA, Lagos, Nigeria. <br>
-            </p>
+          </div>
             
         </div>
 
-        <div>
-          INFORMATION <br>
+        <div class="flex justify-end">
+          <div class="text-right">
+          <h3 class="font-semibold text-xl text-pink-800">INFORMATION </h3><br>
         About Us <br>
+        <br>
         Refund and return policy <br>
+        <br>
         Privacy policy <br>
+        <br>
         Shipping information <br>
+          </div>
         </div>
       </div>
 
-      <div class="pt-10 h-1/6 bg-gray-500 text-center">
+      <div class="pt-10 h-1/6 bg-gray-500 text-center text-white">
         Copyright © 2023 SKEEN beauty. All Rights Reserved.
       </div>
 
