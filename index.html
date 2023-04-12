@@ -13,7 +13,7 @@
     <nav class="bg-gray-800 py-6 " >
         <div class=" w-full mx-auto px-2 sm:px-6 lg:px-8 grid grid-rows-2  md:flex justify-between md:items-center justify-items-center">
           <div class="md:flex md:items-center  ">
-            <a href="#" class="text-white font-bold md:text-xl">SKEEN</a>
+            <a href="#" class="text-white font-bold md:text-xl"><span class="text-blue-600">TRU/</span>SKEEN</a>
           </div>
           <div class="md:flex md:items-center gap-2 md:gap-4 text-xs md:text-sm">
             <a href="./index.html" class="text-white font-medium mr-4">HOME</a>
@@ -32,6 +32,7 @@
       </img>
       </div>
 
+      <!-- New stock -->
       <div class="w-full h-fit py-16 bg-blue-100 grid gap-y-8">
         <h1 class=" text-6xl text-gray-300 font-thin mx-auto col-span-5 ">#GrabYours</h1>
         <h1 class=" text-4xl font-semibold mx-auto col-span-5">NEW STOCK ALERT</h1>
@@ -39,10 +40,10 @@
           <div class=" h-3/4 w-1/6">
           <img class="prod-img" src="./img/newstock/BENTON_Snail_Bee_High_Content_Essence_60ml2_133426f1-b504-4b6b-b264-de8ec8548564_800x.jpg" alt="Bentone snail bee essence">
           <p>$15.99</p> <p>Bentone snail bee essence</p>
-          <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
-            <input class="rounded-none h-8 w-20 border-gray-400 border-2" type="number" name="" id="item-qty"> 
-            <button class="rounded-none h-8 w-8 border-gray-400 border-2">+</button></div>
-          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
+          <div class="flex justify-between w-3/5"> <button class="rounded-none h-8 w-8 border-gray-400 border-2 " id="decrease">-</button>
+            <div class="rounded-none h-8 w-14 border-gray-400 border-2 text-center" id="item-qty" >0</div> 
+            <button class="rounded-none h-8 w-8 border-gray-400 border-2" id="increase">+</button></div>
+          <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-3 border-gray-400 border-2" type="submit">Add to Cart</button></div>
           </div>
 
           <div class=" h-3/4 w-1/6">
@@ -88,7 +89,7 @@
         <h1 class=" text-6xl text-gray-300 font-thin mx-auto col-span-4">#YourFavorites</h1>
         <h1 class="text-4xl font-semibold items-center mx-auto col-span-4 "> BESTSELLERS OF THE WEEK</h1>
         <div class=" mx-10  flex justify-around overflow-hidden max-w-4/5 mt-6 col-span-4">   
-            <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+            <div class=" h-fit w-1/5 bg-white  shadow-xl shadow-indigo-500 pl-4 py-6">
             <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Ceramex uv balm.png" alt="Ceramex SPF 15 UV balm">
             <p>$4.99</p> <p>Ceramex SPF 15 UV balm</p>
             <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
@@ -97,7 +98,7 @@
             <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
               </div>
 
-              <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+              <div class=" h-fit w-1/5 bg-white  shadow-xl shadow-indigo-500 pl-4 py-6">
                 <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Dove pampering body wash.jpg" alt="Dove pampering body wash">
               <p>$6.73</p> <p>Dove pampering body wash</p>
           <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
@@ -106,7 +107,7 @@
           <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
               </div>
 
-              <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+              <div class=" h-fit w-1/5 bg-white  shadow-xl shadow-indigo-500 pl-4 py-6">
                 <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/face facts ceramide cleanser.jpg" alt="Face facts ceramide cleanser">
                 <p>$8.03</p> <p>Face facts ceramide cleanser</p>
           <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
@@ -115,7 +116,7 @@
           <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
                 </div>
 
-                <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+                <div class=" h-fit w-1/5 bg-white  shadow-xl shadow-indigo-500 pl-4 py-6">
                   <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Kojie san soap.png" alt="Kojie San soap 100g">
                   <p>$4.99</p> <p>Kojie San soap 100g</p>
           <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
@@ -126,7 +127,7 @@
           </div>
 
           <div class=" mx-10 flex justify-around overflow-hidden max-w-4/5 mt-6 col-span-4">   
-            <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+            <div class=" h-fit w-1/5 bg-white  shadow-xl shadow-indigo-500 pl-4 py-6">
               <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Nivea SPF UV sunscreen.jpg" alt="Nivea 50SPF UVA Sunscreen">
             <p>$15.41</p> <p>Nivea 50SPF UVA Sunscreen</p>
             <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
@@ -135,7 +136,7 @@
             <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
               </div>
 
-              <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+              <div class=" h-fit w-1/5 bg-white  shadow-xl shadow-indigo-500 pl-4 py-6">
                 <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/olay body wash.jpg" alt="Olay Vit C body wash">
               <p>$10.83</p> <p>Olay Vit C body wash</p>
           <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
@@ -144,7 +145,7 @@
           <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
               </div>
 
-              <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+              <div class=" h-fit w-1/5 bg-white  shadow-xl shadow-indigo-500 pl-4 py-6">
                 <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/Reihaku UV lotion.jpeg" alt="Reihaku UV lotion">
                 <p>$20.99</p> <p>Reihaku UV lotion</p>
           <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
@@ -153,7 +154,7 @@
           <div class="mt-2"><button class="rounded-none h-8 w-fit px-3 ml-6 border-gray-400 border-2" type="submit">Add to Cart</button></div>
                 </div>
 
-                <div class=" h-fit w-1/5 bg-white  shadow-lg shadow-indigo-300 pl-4 py-6">
+                <div class=" h-fit w-1/5 bg-white  shadow-xl shadow-indigo-500 pl-4 py-6">
                   <img class="prod-img w-3/4 object-contain mx-auto mb-4" src="./img/bestsellers/topicream.png" alt="Bentone snail bee essence">
                   <p>$12.99</p> <p>Topicream</p>
           <div> <button class="rounded-none h-8 w-8 border-gray-400 border-2">-</button>
@@ -175,8 +176,12 @@
             info@trueskeenbeauty.com <br>
             <br>
             xyz Crescent, Ikeja GRA, Lagos, Nigeria. <br>
+          </div> <br>
+          <div class="flex justify-between w-1/3 text-3xl">
+            <i class="fa-brands fa-instagram text-pink-600"></i>
+            <i class="fa-brands fa-facebook text-blue-800"></i>
+            <i class="fa-brands fa-twitter text-blue-400"></i>
           </div>
-            
         </div>
 
         <div class="flex justify-end">
