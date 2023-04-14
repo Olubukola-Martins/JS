@@ -5,57 +5,55 @@ const increase = document.querySelector("#increase");
 let cart = document.querySelector("#cart");
 let addToCart = document.getElementById("addToCart");
 let itemsList = [];
-const item = document.querySelector("#item")
+const item = document.querySelector(".item")
 let addItems = document.createElement("div");
-item.appendChild(addItems);
+let product = addToCart.parentElement.parentElement;
+let productName = product.getElementsByClassName("product-name")[0].innerHTML;
+let productPrice = product.getElementsByClassName("product-price")[0].innerHTML.replace('$', " ");
+// item.appendChild(addItems);
 let countValue;
 
 // let info = addToCart.parentElement.children;
 // let productName = info[2].tagName;
 
-handleQuantity();
 
- function handleQuantity(){
+
+  function handleQuantity(){
  let count = 0; 
     btns.forEach(function handleBtns(btn){
-    btn.addEventListener("click",
-function (e){
+    btn.addEventListener("click",function (e){
         if (e.currentTarget == increase) {
          count ++; 
         } else if (e.currentTarget == decrease && count >= 1) {
          count -- ;
         } else { count = 0};
         qty.innerHTML = count;
-       let x = qty.innerHTML.replace("0", count);
-        // return qty.textContent
-    handleAddToCart(count);
+        console.log (qty.innerHTML);
+        handleAddToCart(qty.innerHTML)
         // cart.textContent = count; //re-address cart    
-    } 
+    }     
+
 )  
 }
 )
 } 
-// function acept(gggg) {
-//     console.log(gggg)
-// }
-// console.log( countValue)
+handleQuantity();
 
 
 
-
- function handleAddToCart(data){
+ function handleAddToCart(x){
     addToCart.addEventListener("click", function(e){
         if(e.currentTarget == addToCart){
-            let x = parseInt(data);
-            let product = addToCart.parentElement.parentElement;
-            let productName = product.getElementsByClassName("product-name")[0].innerHTML;
-            let productPrice = product.getElementsByClassName("product-price")[0].innerHTML.replace('$', " ");
-            let productQty = qty.innerHTML.replace("0", data[data.length - 1]);
-            addItems.appendChild(productName);
+            // let x = parseInt(count);
+            // qty.innerHTML = count;
+            // let productQty = qty.innerHTML.replace("0", data[data.length - 1]);
+            // addItems.appendChild(productName);
             //  alert(productPrice);
             //  alert(productName);
             //  alert(productQty)
-             console.log(data  )
+
+            item.appendChild(document.createTextNode(productName))
+            alert (typeof item)
 
         }
 
